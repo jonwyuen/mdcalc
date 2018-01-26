@@ -5,8 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>MDCalc</title>
+  <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
-  
+
+  <h1>MDCalc</h1>
+  <div class="container">
+  <div class="form-container">
+    <form action="" id="ag-form">
+      <div class="form-section">
+        <div><strong>Anion Gap</strong></div>
+      </div>
+      <div class="form-section">
+        <label for="ag-na">Na: </label>
+        <input type="number" name="ag-na" id="ag-na">
+      </div>
+      <div class="form-section">
+        <label for="ag-cl">Cl: </label>
+        <input type="number" name="ag-cl" id="ag-cl">
+      </div>
+      <div class="form-section">
+        <label for="ag-bicarb">Bicarb: </label>
+        <input type="number" name="ag-bicarb" id="ag-bicarb">
+      </div>
+      <div class="form-section">
+        <button>Calc</button>
+      </div>
+      <div class="form-section">
+        <span>Result: </span><span id="ag-result"></span>
+      </div>
+    </form>
+  </div>
+  <div class="form-container">
+    <form action="" id="so-form">
+      <div class="form-section">
+        <div><strong>Serum Osmality</strong></div>
+      </div>
+      <div class="form-section">
+        <label for="so-na">Na: </label>
+        <input type="number" name="so-na" id="so-na">
+      </div>
+      <div class="form-section">
+        <label for="so-na">K: </label>
+        <input type="number" name="so-k" id="so-k">
+      </div>
+      <div class="form-section">
+        <label for="so-bun">BUN: </label>
+        <input type="number" name="so-bun" id="so-bun">
+      </div>
+      <div class="form-section">
+        <label for="so-glucose">Glucose: </label>
+        <input type="number" name="so-glucose" id="so-glucose">
+      </div>
+      <div class="form-section">
+        <button>Calc</button>
+      </div>
+      <div class="form-section">
+        <span>Result: </span><span id="so-result"></span>
+      </div>
+    </form>
+    
+  </div> 
+  </div>
+
+
+  <script src="./js/index.js"></script>  
 </body>
 </html>
