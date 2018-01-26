@@ -9,12 +9,11 @@ body {
 
 .container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .form-container {
-  margin: 10px;
+  margin: 25px;
   border: 1px solid black;
   border-radius: 20px;
   width: 300px;
@@ -25,7 +24,7 @@ body {
 }
 
 .form-section {
-  margin: 5px;
+  margin: 7px;
 }
 
 form {
@@ -59,3 +58,9 @@ input:focus {
   outline: none;
 }
 
+@media screen and (max-width: 600px) {
+  .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
