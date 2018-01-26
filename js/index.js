@@ -11,6 +11,7 @@ anionGapForm.addEventListener('submit', e => {
   let bicarb = document.querySelector('#ag-bicarb').value;
   let result = anionGap(+na, +cl, +bicarb);
   document.querySelector('#ag-result').innerText = result;
+  anionGapForm.reset();
 });
 
 serumOsmalityForm.addEventListener('submit', e => {
@@ -21,4 +22,5 @@ serumOsmalityForm.addEventListener('submit', e => {
   let glucose = document.querySelector('#so-glucose').value;
   let result = serumOsmality(+na, +k, +bun, +glucose);
   document.querySelector('#so-result').innerText = result;
+  serumOsmalityForm.reset();
 });
