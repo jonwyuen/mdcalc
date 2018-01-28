@@ -5,18 +5,18 @@ let form = document.querySelector('form');
 
 form.addEventListener('submit', e => {
   e.preventDefault();
-  let agNa = document.querySelector('#ag-na').value;
-  let agCl = document.querySelector('#ag-cl').value;
-  let agBicarb = document.querySelector('#ag-bicarb').value;
-  let agResult = anionGap(+agNa, +agCl, +agBicarb);
+  let na = document.querySelector('#na').value;
+  let k = document.querySelector('#k').value;
+  let cl = document.querySelector('#cl').value;
+  let bicarb = document.querySelector('#bicarb').value;
+  let bun = document.querySelector('#bun').value;
+  let cr = document.querySelector('#cr').value;
+  let glucose = document.querySelector('#glucose').value;
 
-  let soNa = document.querySelector('#so-na').value;
-  let soK = document.querySelector('#so-k').value;
-  let soBun = document.querySelector('#so-bun').value;
-  let soGlucose = document.querySelector('#so-glucose').value;
-  let soResult = serumOsmality(+soNa, +soK, +soBun, +soGlucose);
+  let anionGapResult = anionGap(+na, +cl, +bicarb);
+  let serumOsmalityResult = serumOsmality(+na, +k, +bun, +glucose);
 
-  document.querySelector('#ag-result').innerHTML = `<strong>${agResult}</strong>`;
-  document.querySelector('#so-result').innerHTML = `<strong>${soResult}</strong>`;
+  document.querySelector('#ag-result').innerHTML = `<strong>${anionGapResult}</strong>`;
+  document.querySelector('#so-result').innerHTML = `<strong>${serumOsmalityResult}</strong>`;
   form.reset();
 });

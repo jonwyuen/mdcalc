@@ -67,6 +67,7 @@ hr {
   border: 1px solid gray;
   border-radius: 20px;
   background-color: #DCE7F9;
+  margin-top: 15px;
 }
 
 #results > div {
